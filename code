@@ -1,0 +1,12 @@
+function findDifference(date1, date2) {
+    let differenceInTime = date2.getTime() - date1.getTime();
+    return differenceInTime / (1000 * 3600 * 24);
+}
+
+let date1 = new Date("2022-01-01");
+let date2 = new Date("2022-01-31");
+console.log(findDifference(date1, date2)); // prints 30
+
+let date3 = new Date("2022-12-31");
+let date4 = new Date("2023-01-01");
+console.log(findDifference(date3, date4)); // prints 1
